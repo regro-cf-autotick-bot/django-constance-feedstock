@@ -3,7 +3,7 @@ schema_version: 1
 
 context:
   name: django-constance
-  version: 4.3.5
+  version: 4.4.0
 
 package:
   name: ${{ name|lower }}
@@ -11,7 +11,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/django_constance-${{ version }}.tar.gz
-  sha256: 081177483d272b664cf768deae76fc2fbb0a777076f45620b6fde4d9075ee2b3
+  sha256: fc0b012b493590946142172ca38e0b43149c422f8dc8976045a01313e6f4f487
 
 build:
   number: 0
@@ -27,7 +27,6 @@ requirements:
     - pip
   run:
     - python >=${{ python_min }},<4.0
-    - django >=4.2
 tests:
   - python:
       imports:
